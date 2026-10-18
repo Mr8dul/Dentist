@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DENTAL THEATRE | Dr. Duhan &amp; Dr. Parul, Panipat</title>
+  <meta name="description" content="Dr. Duhan &amp; Dr. Parul’s Dental Theatre at Room 25, GC Gupta Hospital, HUDA Sector 11, Panipat. Explore patient reviews, treatments and request an appointment.">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="DENTAL THEATRE | Dr. Duhan &amp; Dr. Parul, Panipat">
+  <meta property="og:description" content="Dr. Duhan &amp; Dr. Parul’s Dental Theatre at Room 25, GC Gupta Hospital, HUDA Sector 11, Panipat. Explore patient reviews, treatments and request an appointment.">
+  
+  <!-- Google Fonts (Loads cleanly from anywhere without needing local font files) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --primary-dark: #0f4c45;
+      --bg-light: #f8fafc;
+      --white: #ffffff;
+      --accent-green: #10b981;
+      --text-muted: #526763;
+      --border-light: #dce7e4;
+    }
+    body {
+      font-family: "Plus Jakarta Sans", "Inter", sans-serif;
+      background-color: var(--white);
+      color: #000;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { text-decoration: none; color: inherit; }
+    
+    .page-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      width: 100%;
+    }
+    
+    /* Header / Nav */
+    .clinic-nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      width: 100%;
+      background-color: var(--white);
+      border-bottom: 1px solid var(--border-light);
+      padding: 22px 48px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+    .clinic-header {
+      width: 100%;
+      max-width: 1104px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+    }
+    .clinic-identity {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+    .clinic-title {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: -0.6px;
+      color: var(--primary-dark);
+    }
+    .clinic-subtitle {
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--text-muted);
+    }
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--accent-green);
+      color: var(--primary-dark);
+      font-weight: 700;
+      font-size: 14px;
+      padding: 16px 24px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: opacity 0.2s ease;
+    }
+    .btn-primary:hover { opacity: 0.9; }
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--white);
+      border: 1px solid var(--border-light);
+      color: var(--primary-dark);
+      font-weight: 700;
+      font-size: 14px;
+      padding: 16px 24px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+    .btn-secondary:hover { background-color: var(--bg-light); }
+    .nav-links {
+      width: 100%;
+      max-width: 1104px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+    .nav-links a {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--primary-dark);
+    }
+    .nav-links a:hover { text-decoration: underline; }
+
+    /* Welcome Section */
+    .welcome-section {
+      width: 100%;
+      background-color: var(--bg-light);
+      padding: 72px 48px 48px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .welcome-content {
+      width: 100%;
+      max-width: 1104px;
+      display: flex;
+      align-items: center;
+      gap: 56px;
+    }
+    .intro-text {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+    .eyebrow {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      color: var(--primary-dark);
+    }
+    .main-heading {
+      font-size: 58px;
+      font-weight: 700;
+      letter-spacing: -2.5px;
+      line-height: 1.12;
+      color: var(--primary-dark);
+    }
+    .description {
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--text-muted);
+    }
+    .cta-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    /* Modern Card & Image Container */
+    .clinic-card {
+      flex: 0.9;
+      background-color: var(--primary-dark);
+      border-radius: 20px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .card-img-wrapper {
+      width: 100%;
+      height: 340px;
+      position: relative;
+    }
+    .card-img-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+    .card-content {
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .card-title {
+      font-size: 19px;
+      font-weight: 600;
+      color: var(--white);
+    }
+    .card-subtext {
+      font-size: 12px;
+      color: var(--white);
+      opacity: 0.8;
+    }
+    .trust-badges {
+      width: 100%;
+      max-width: 1104px;
+      display: flex;
+      gap: 40px;
+      padding-top: 40px;
+    }
+
+    /* Location Section */
+    .location-section {
+      width: 100%;
+      max-width: 1200px;
+      padding: 64px 48px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 32px;
+    }
+    .location-title {
+      font-size: 36px;
+      font-weight: 700;
+      letter-spacing: -1px;
+      color: var(--primary-dark);
+    }
+    .branch-card {
+      width: 100%;
+      background-color: var(--bg-light);
+      border: 1px solid var(--border-light);
+      border-radius: 12px;
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .branch-name {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--primary-dark);
+    }
+
+    /* Footer */
+    footer {
+      width: 100%;
+      background-color: var(--primary-dark);
+      padding: 56px 48px 32px;
+      display: flex;
+      justify-content: center;
+      color: var(--white);
+    }
+    .footer-inner {
+      width: 100%;
+      max-width: 1104px;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+    .footer-cols {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(180px, 1fr));
+      gap: 32px;
+    }
+    .footer-col {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .footer-desc {
+      font-size: 14px;
+      line-height: 1.7;
+      opacity: 0.8;
+    }
+    .footer-copyright {
+      font-size: 11px;
+      line-height: 1.7;
+      opacity: 0.65;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding-top: 16px;
+    }
+
+    /* Responsiveness */
+    @media (max-width: 899px) {
+      .clinic-nav { padding: 16px 20px; }
+      .clinic-header { flex-direction: column; align-items: flex-start; }
+      .welcome-section { padding: 40px 20px 32px; }
+      .welcome-content { flex-direction: column; gap: 32px; }
+      .main-heading { font-size: 38px; letter-spacing: -1.5px; }
+      .clinic-card { width: 100%; }
+      .card-img-wrapper { height: 250px; }
+      .trust-badges { flex-wrap: wrap; gap: 16px; }
+      .location-section { padding: 48px 20px; }
+      .footer-cols { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrapper">
+    <!-- Header -->
+    <header class="clinic-nav">
+      <div class="clinic-header">
+        <a class="clinic-identity" href="./index.html">
+          <div class="clinic-title">DENTAL THEATRE</div>
+          <div class="clinic-subtitle">Dr. Duhan &amp; Dr. Parul • Panipat</div>
+        </a>
+        <div>
+          <a class="btn-primary" href="tel:+918930010599">
+            Call Clinic (+91 89300 10599)
+          </a>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="./index.html">Home</a>
+        <a href="./about/index.html">About Us</a>
+        <a href="./treatments/index.html">Treatments</a>
+        <a href="./reviews/index.html">Reviews</a>
+        <a href="./book-appointment/index.html">Book Appointment</a>
+      </nav>
+    </header>
+
+    <!-- Welcome Section -->
+    <section class="welcome-section">
+      <div class="welcome-content">
+        <div class="intro-text">
+          <p class="eyebrow">PRECISION DENTISTRY. PERSONAL CARE.</p>
+          <h1 class="main-heading">Advanced, Painless Dental Care in Panipat</h1>
+          <p class="description">A healthier smile starts with feeling at ease. Expert dental and implant care by Dr. Bijender Duhan, Oral Surgeon &amp; Implantologist, and Dr. Parul Jangra.</p>
+          <div class="cta-buttons">
+            <a class="btn-primary" href="./book-appointment/index.html">Book Consultation</a>
+            <a class="btn-secondary" href="https://maps.app.goo.gl/aBEp8HcENybYrWQPA" target="_blank" rel="noopener">Get Directions</a>
+          </div>
+        </div>
+        
+        <div class="clinic-card">
+          <div class="card-img-wrapper">
+            <!-- Loads directly from the cloud so you don't need the local image file, with local fallback -->
+            <img 
+              src="https://framerusercontent.com/images/UoJggy1cEW7ubQzlw1kWPd3QWBo.jpg" 
+              onerror="this.onerror=null; this.src='./images/UoJggy1cEW7ubQzlw1kWPd3QWBo.jpg';"
+              alt="Modern dental treatment room at Dental Theatre Panipat">
+          </div>
+          <div class="card-content">
+            <div class="card-title">Expert hands. A gentler experience.</div>
+            <div class="card-subtext">Modern technology. Thoughtful, personalised care.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="trust-badges">
+        <p class="eyebrow">5.0 ON GOOGLE · 177 REVIEWS</p>
+        <p class="eyebrow">ROTARY RCT</p>
+        <p class="eyebrow">ADVANCED IMPLANTS</p>
+      </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="location-section" id="location">
+      <div style="width: 100%;">
+        <p class="eyebrow" style="margin-bottom: 8px;">ONE CLINIC. PERSONALISED CARE.</p>
+        <h2 class="location-title">Find us at HUDA Sector 11.</h2>
+      </div>
+      <div style="width: 100%;">
+        <div class="branch-card">
+          <p class="eyebrow">OUR PANIPAT CLINIC</p>
+          <div class="branch-name">HUDA Sec 11</div>
+          <p class="description">Room 25, GC Gupta Hospital, 372–373, HUDA Sector 11, Panipat, Haryana 132103</p>
+          <div>
+            <a href="https://maps.app.goo.gl/aBEp8HcENybYrWQPA" target="_blank" rel="noopener" style="color:var(--primary-dark);font-weight:600;text-decoration:underline;">Get directions</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-cols">
+          <div class="footer-col">
+            <div class="clinic-title" style="color:#fff;">DENTAL THEATRE</div>
+            <p class="footer-desc">Dr. Duhan &amp; Dr. Parul’s dental and implant clinic at GC Gupta Hospital, HUDA Sector 11, Panipat.</p>
+          </div>
+          <div class="footer-col">
+            <p class="eyebrow" style="color:#fff;">VISIT &amp; CONTACT</p>
+            <p class="footer-desc">Google Maps lists the clinic as open 24 hours. Please call before visiting to confirm availability.</p>
+            <p><a href="tel:+918930010599" style="font-weight:600;font-size:14px;color:#fff;">Appointments &amp; urgent dental concerns: +91 89300 10599</a></p>
+          </div>
+          <div class="footer-col">
+            <p class="eyebrow" style="color:#fff;">VISIT OUR CLINIC</p>
+            <p><a href="https://maps.app.goo.gl/aBEp8HcENybYrWQPA" target="_blank" rel="noopener" style="font-size:14px;color:#fff;text-decoration:underline;">HUDA Sector 11 · Google Maps</a></p>
+            <div>
+              <a class="btn-primary" href="https://wa.me/918930010599" target="_blank" rel="noopener">Connect on WhatsApp</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          © 2026 DENTAL THEATRE, Panipat. All rights reserved. Individual treatment needs and outcomes vary.
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
